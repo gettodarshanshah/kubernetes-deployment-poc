@@ -9,6 +9,6 @@ spec:
     app: web
   ports:
     - port: 80
-      protocol: TCP
+      protocol: TCP #by default all pods run on TCP, to change it change the spec of deployment.
       targetPort: 80
   type: NodePort
